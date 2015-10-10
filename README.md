@@ -1,28 +1,14 @@
 ## BLANK_TEMPLATE
 
-Basic frontend template for projects using HTML, CSS, jQuery, and Bootstrap.
+Step 1: Create a wireframe of the site with Bootstrap based on notebook sketch
+	A: Create header for "Tiny Post"
+	B: Create div containers for columns, make responsive
+	C: Use Bootstrap styling to fullest
 
-Make sure to rename the repo folder, after you clone it, so that you don't confuse yourself later. Try renaming when you clone:
+Step 2: Create a form with input type submit under the header
 
-``` bash
-git clone CLONE_URL your_project_name
-```
-After you have cloned and renamed your repo, cd into the folder. 
-```bash
-cd your_project_name
-```
-Next check your git remote origin.
-```bash
-git remote -v
-```
+Step 3: Make a subheader called "Published Posts" to put the published posts under
 
-It is pointing to the blank_template repo but you want it to point to your own repo. You need to remove the current remote and place your own in.
-```bash
-git remote remove origin
-```
-Next go to your Github page and make a new repo with the same name you just created locally. **Don't click Initialize this repository with a README**. Create Repo, then you will see two options, choose the second " push an existing repository from the command line" follow the instructions
+Step 4: use $.get(maybe?) to retreive the (.text, .html, or .val) from the input of the form
 
-```bash
-git remote add origin your_github_project.git
-git push -u origin master
-```
+Step 5: append the input value from the form to a new <ul> with <li> or <p>.  Maybe the format is ("<p>" + input.val + "</p>")

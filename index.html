@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <title>Blank</title>
+    <title>Tiny Post</title>
 
     <!-- STYLESHEETS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -18,12 +18,31 @@
     <script src="base.js"></script>
   </head>
   <body>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-          <h1>We're in good shape.</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>Tiny Post</h1>
+                <form class="input-group col-md-8 col-md-offset-2" id="new-tiny-post">
+                  <input type="text" id="blogText" class="form-control" placeholder="What's on your mind today?">
+                    <span class="input-group-btn">
+                      <button type="submit" id="searchButton" class="btn btn-primary">Post</button>
+              </span>
+            </form>
+                <h2>Publish Content</h2>
+                  <ul class="published-posts" id="published-post-list">
+                    <li class="published-post-item">hello</li>
+                    <li class="published-post-item">man</li>
+                  </ul> 
+          </div>
         </div>
       </div>
-    </div>
   </body>
 </html>
+
+<!-- action=""  -->
+<!-- 
+  <div class="col-md-8 col-md-offset-2">
+      <ul>
+        <p>...</p>
+      </ul>
+     </div>  -->
