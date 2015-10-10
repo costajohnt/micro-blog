@@ -5,8 +5,8 @@ $(document).ready(function(){
 	$('#new-tiny-post').submit(function(e) {
 		e.preventDefault();
 		// console.log("clicking submit works!");
-			var postContent = $('#blogText').val('');
-			var publishedPosts = '<li class="published-post-item">' + postContent + '</li>';
+			var postContent = $('#blogText').val();
+			var publishedPosts = '<li class="published-post-item" >' + postContent + '</li>';
 			$('#published-post-list').append(publishedPosts);
 	});
 });
