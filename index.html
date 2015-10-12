@@ -9,40 +9,39 @@
     <!-- STYLESHEETS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 
     <!-- VENDOR SCRIPTS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
     <!-- APPLICATION SCRIPTS -->
-    <script src="base.js"></script>
+    <script src="base2.js"></script>
   </head>
   <body>
-      <div class="container">
+      <div class="container" id="topdiv">
         <div class="row">
-          <div class="col-md-12">
-            <h1>Tiny Post</h1>
+          <div class="col-md-8 col-md-offset-2 col-xs-8 col-xs-offset-2">
+            <h1>HIKER NOTES</h1>
                 <form class="input-group col-md-8 col-md-offset-2" id="new-tiny-post">
-                  <input type="text" id="blogText" class="form-control" placeholder="What's on your mind today?">
+                  <input type="text" id="blogText" class="form-control" placeholder="Tell us about your journey">
                     <span class="input-group-btn">
                       <button type="submit" id="searchButton" class="btn btn-primary">Post</button>
-              </span>
-            </form>
-                <h2>Publish Content</h2>
-                  <ul class="published-posts" id="published-post-list">
-                    <li class="published-post-item">hello</li>
-                    <li class="published-post-item">man</li>
-                  </ul> 
+                    </span>
+                </form>
+              </div>
+            </div>
+          </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2 col-xs-8 col-xs-offset-2">
+                <h2>RECENT HIKES</h2>
+                  <div class="row" id="published-post-list">
+                  </div>  
           </div>
         </div>
       </div>
   </body>
 </html>
 
-<!-- action=""  -->
-<!-- 
-  <div class="col-md-8 col-md-offset-2">
-      <ul>
-        <p>...</p>
-      </ul>
-     </div>  -->

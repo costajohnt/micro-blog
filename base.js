@@ -1,14 +1,20 @@
 console.log("Sanity Check: JS is working!");
 
 $(document).ready(function(){
-
+	//blogText input is waiting for a click or return key 
+	//stroke to submit the value
 	$('#new-tiny-post').submit(function(e) {
+		//prevent default action of submit form
 		e.preventDefault();
-		// console.log("clicking submit works!");
+			//postContent is the value you put into the input
 			var postContent = $('#blogText').val();
+			//publishedPosts places the postContent in a line of <ul> #published-post-list
 			var publishedPosts = '<li class="published-post-item" >' + postContent + '</li>';
-			$('#published-post-list').append(publishedPosts);
-	});
+			//the line below adds the publishedPosts line we created to the <ul>
+			$('#published-post-list').prepend(publishedPosts);
+			//below we reset the value of our input field after submission
+			$('#blogText').val('');
+		});	
 });
 
 // $('#searchButton').text("");
