@@ -29,7 +29,7 @@ $(document).ready(function(){
 		var displayDate = (date.getMonth()+1) + '/' + (date.getDate()) + '/' + date.getFullYear();
 		new Post(postContent);
 	  	if (postContent) {
-			$("#published-post-list").prepend("<b>" + '<div class="list-group-item">Post ' + count + "</b>" + ":<br>" + postContent + "<br>" + (dayNames[date.getDay()]) + " " + displayDate + '</div>');
+			$("#published-post-list").prepend("<i>" + '<div class="list-group-item">' + count + "</i>" + "<br>" + "<b>" + postContent + "</b>" + "<br>" + "<i>" + (dayNames[date.getDay()]) + " " + displayDate + '</div>' + "</i>");
 			count++;
 			console.log(count);
 		}
