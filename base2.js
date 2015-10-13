@@ -2,6 +2,8 @@
 console.log("Sanity Check: JS is working!");
 //document is waiting for user input
 $(document).ready(function(){
+	$(function () {
+	  $('[data-toggle="tooltip"]').tooltip()});
 	  //I want to start my post count at 1
 	  var count = 1;
 	  //the OOP constructor below creates new post objects with user
