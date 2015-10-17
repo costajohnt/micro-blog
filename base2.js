@@ -16,8 +16,7 @@ $(document).ready(function(){
 		this.count = count;
 		//content is created by the user in the input field.
 		this.content = content;
-		//Date is the date in which the new post was created. NOT SURE HOW TO ADD THIS TO POSTCONTENT!!
-		this.date = new Date();
+		//Date is the date in which the new post was created. 
 		//close Post function
 	    }
 	    //blogText input is waiting for a click or return key 
